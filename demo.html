@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Misión - Coninsa Ramon H</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script type="text/javascript" src="jquery-1.6.2.min.js"></script>
+        <script type="text/javascript" src="jquery-ui-1.8.16.custom.min.js"></script>
+        <script type="text/javascript" src="jquery.wordsearchgame.js"></script>
+        <link  rel="stylesheet" type="text/css" href="jquery.wordsearchgame.css">
+
+        <script>
+		$(document).ready( function () {
+			var words = "especialistas,arquitectura,ingeniería,construcción,bienes,raices,servicios,"+
+						"inmobiliarios,oferta,soluciones,integrales,competitivas,confiable,vivienda,"+
+						"comercio,industria,institucional,infraestructura,satisfacción,clientes,calidad,"+
+						"vida,bienestar,pais,somos,valor,transformar,habitad";
+			
+			//attach the game to a div
+			$("#theGrid").wordsearchwidget({"wordlist" : words,"gridsize" : 28});
+		});
+
+    
+        </script>
+        
+    </head>
+    <body>
+        <div id="theGrid"></div>
+
+    </body>
+</html>
